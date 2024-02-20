@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .text-img {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+            justify-content: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .content {
+            background-color: #790102;
+        }
+
+        footer {
+            background-color: #790102;
+            margin-top: 120px;
+            color: white;
+        }
+
+        .main-btn {
+            margin-left: 100px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        .text-img p {
+            color: white;
+            max-width: 400px;
+            margin-left: 100px;
+            font-size: 1.3em;
+        }
+
+        .text-img img {
+            border-radius: 20px;
+        }
+
+        .main-btn {
+            width: 235px;
+        }
+
+        .review {
+            text-align: center;
+            height: 350px;
+        }
+
+        .review p {
+            margin: 40px;
+        }
+
+        .review h2 {
+            margin: 20px;
+        }
+
+        video {
+            border-radius: 20px;
+        }
+
+        ul {
+            display: table;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            padding-top: 150px;
+            text-align: center;
+        }
+
+
+        .review li {
+            margin: 20px;
+        }
+
+        .main-btn {
+            text-align: center;
+        }
+
+        @media (max-width: 450px) {
+            .review {
+                height: 450px;
+            }
+        }
+
+        @media (max-width: 710px) {
+            .text-img {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .text-img p {
+                margin: 20px;
+            }
+
+            .main-btn {
+                margin-right: 65px;
+            }
+
+            video {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 830px) {
+
+            .text-img p,
+            .main-btn {
+                margin-left: 50px;
+            }
+
+            video {
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <!--Nav Starting-->
+        <a href="./index.html"><img class="logo" height="50px" src="./logo.jpg" alt="logo"></a>
+
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./about us.html">About us</a>
+            <a id="last-link" href="./contact us.html">Contact us</a>
+        </nav>
+        <!--Nav Ending-->
+
+    </header>
+    <!--Header-->
+    <div class="content">
+        <h1>About us</h1>
+        <div class="text-img">
+            <p>At Picky Coffee Shop, we understand the importance of a
+                great cup of coffee in your daily routine. That's why we go
+                above and beyond to source the finest beans, roast them
+                with precision, and deliver a truly exceptional product to our
+                customers. Whether you're starting your morning or taking a
+                well-deserved break, let Picky Coffee Shop be your go-to
+                destination for quality coffee that exceeds expectations.</p>
+            <video autoplay loop muted height="450px">
+                <source src="./Video.mp4" type="video/mp4">
+                <!-- Fallback for browsers that do not support the video tag -->
+                <img src="./cafe2.jpg" height="400px" alt="Cafe image">
+            </video>
+            <a class="main-btn" href="./menu.html">Explore Our Menu</a>
+        </div>
+    </div>
+    <div class="review">
+        <h2>Tired of the Ordinary? We Get It.</h2>
+        <p>Join our satisfied customers who have discovered their perfect cup of coffee at Picky.</p>
+        <ul>
+            <li>"Picky Coffee Shop has spoiled me for all other coffee. Their attention to
+                detail and dedication to quality are unmatched." - Sarah A.</li>
+            <li>"I used to think all coffee tasted the same until I tried Picky. Now I can't start
+                my day without it!" - Sayed A.</li>
+            <li>"More than just coffee, Picky is a community. I always feel welcome and
+                inspired when I'm there." - Mariam F.</li>
+        </ul>
+        <a class="main-btn"
+            href="https://www.google.com/maps/place/31%C2%B001'08.2%22N+30%C2%B027'56.0%22E/@31.0189355,30.4629732,17z/data=!3m1!4b1!4m4!3m3!8m2!3d31.0189355!4d30.4655481?entry=ttu">Find
+            Picky</a>
+    </div>
+    <!--Footer-->
+    <footer>
+        <p> &COPY; 2024 Picky. All rights reserved.</p>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=61553640835262&mibextid=ZbWKwL" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/pickycoffee.cafe/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+    <!--Footer-->
+</body>
+
+</html>
